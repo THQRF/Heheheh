@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página inocente</title>
+</head>
+<body>
+  <h1>Carregando...</h1>
+  <script>
+    // Registra o service worker ao abrir o site
+    navigator.serviceWorker.register('sw.js').then(() => {
+      console.log('SW ativo'); // Remove no deploy final
+    });
+  </script>
+</body>
+</html>
